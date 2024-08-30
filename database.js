@@ -37,7 +37,7 @@ const Pengguna = sequelize.define(
 			autoIncrement: true,
 		},
 		no_akun: {
-			type: DataTypes.INTEGER,
+			type: DataTypes.STRING,
 			allowNull: false,
 			unique: true,
 		},
