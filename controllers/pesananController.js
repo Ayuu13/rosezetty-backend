@@ -329,7 +329,7 @@ exports.getPesananByPesananId = async (req, res) => {
       where: { pesanan_id },
       include: [
         { model: Pesanan, as: 'pesanan', 
-            attributes: ['no_pesanan','total_barang','harga_total','waktu_pesan','waktu_bayar','metode_id','jumlah_bayar','gambar','status_id','pengguna_id'],
+            attributes: ['id','no_pesanan','total_barang','harga_total','waktu_pesan','waktu_bayar','metode_id','jumlah_bayar','gambar','status_id','pengguna_id'],
             include: [
               { model: MetodeBayar, as: 'metodebayar', attributes: ['nama'] },
               { model: Status, as: 'status', attributes: ['nama'] },
